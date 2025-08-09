@@ -30,7 +30,7 @@ export default function ColumnComponent({ column }: Props) {
       />
 
       <Droppable droppableId={column.id}>
-        {(provided, snapshot) => (
+        {(provided) => (
           <Paper
             ref={provided.innerRef}
             {...provided.droppableProps}

@@ -18,7 +18,7 @@ type Props = {
 export default function TaskCard({ task, index }: Props) {
   return (
     <Draggable draggableId={task.id} index={index}>
-      {(provided, snapshot) => (
+      {(provided) => (
         <div
           ref={provided.innerRef}
           {...provided.draggableProps}
